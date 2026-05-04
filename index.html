@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Credit Card UI</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#cfe2f3;
+}
+
+/* CARD */
+.card{
+    width:350px;
+    height:220px;
+    border-radius:20px;
+    padding:20px;
+    color:#fff;
+    background:linear-gradient(135deg,#000,#222);
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    position:relative;
+}
+
+/* TOP */
+.top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* LOGO */
+.logo{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.circle{
+    width:20px;
+    height:20px;
+    border-radius:50%;
+}
+
+.red{
+    background:#eb001b;
+}
+
+.yellow{
+    background:#f79e1b;
+    margin-left:-10px;
+}
+
+/* CHIP */
+.chip{
+    width:50px;
+    height:35px;
+    background:gold;
+    border-radius:5px;
+}
+
+/* CARD NUMBER */
+.number{
+    margin-top:30px;
+    font-size:18px;
+    letter-spacing:2px;
+}
+
+/* BOTTOM */
+.bottom{
+    display:flex;
+    justify-content:space-between;
+    margin-top:25px;
+    font-size:14px;
+}
+
+.name{
+    font-size:16px;
+    margin-top:5px;
+}
+
+.valid{
+    text-align:right;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="top">
+        <div class="logo">
+            <div class="circle red"></div>
+            <div class="circle yellow"></div>
+            <span>Master Card</span>
+        </div>
+        <div class="chip"></div>
+    </div>
+
+    <div class="number">
+        8050 5040 2030 3020
+    </div>
+
+    <div class="bottom">
+        <div>
+            <div>Card Holder</div>
+            <div class="name">Jyoti Chaudhary</div>
+        </div>
+
+        <div class="valid">
+            <div>Valid Thru</div>
+            <div>05/28</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
